@@ -7,6 +7,6 @@ public class Variabile extends Espressione {
 
     public void setValoreVerita(ValoreVerita stato) {
         this.stato = stato;
-        rappresentazione = stato;
+        rappresentazione = stato.toString();
     }
 }
