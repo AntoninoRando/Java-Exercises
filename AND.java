@@ -5,5 +5,7 @@ public class AND extends Espressione {
         eDestra = e1;
         eSinistra = e2;
         stato = ValoreVerita(e1.toBoolean() && e2.toBoolean());
+
+        rappresentazione = "(" + e1.rappresentazione + " && " + e2.rappresentazione + ")";
     }
 }
