@@ -32,5 +32,13 @@ public class Test {
         Espressione fl = new Costante(ValoreVerita.FALSO);
         OR or1 = new OR(tr, fl);
         System.out.println(or1.toString());
+
+        Variabile var1 = new Variabile();
+        var1.setValoreVerita(trV);
+        Espressione not1 = new NOT(new AND(or1, var1));
+        System.out.println(not1.toString());
+        
+        var1.setValoreVerita(ValoreVerita.FALSO);
+        System.out.println(not1.toString());
     }
 }
