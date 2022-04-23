@@ -1,4 +1,4 @@
-package Esercizio2;
+package EspressioniDiVerita;
 
 public class AND extends Espressione {
     public AND(Espressione e1, Espressione e2) {

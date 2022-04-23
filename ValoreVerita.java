@@ -1,3 +1,5 @@
+package EspressioniDiVerita;
+
 public enum ValoreVerita {
     VERO(true), FALSO(false);
 
@@ -10,5 +12,11 @@ public enum ValoreVerita {
 
     public boolean toBoolean() {
         return stato;
+    }
+
+    public static ValoreVerita fromBoolean(Boolean stato) {
+        if (stato)
+            return ValoreVerita.VERO;
+        return ValoreVerita.FALSO;
     }
 }

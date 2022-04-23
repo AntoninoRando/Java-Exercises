@@ -1,4 +1,4 @@
-package Esercizio2;
+package EspressioniDiVerita;
 
 /**
  * Si progetti un insieme di classi che permettano di rappresentare e calcolare

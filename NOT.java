@@ -1,4 +1,4 @@
-package Esercizio2;
+package EspressioniDiVerita;
 
 public class NOT extends Espressione {
     public NOT(Espressione e) {

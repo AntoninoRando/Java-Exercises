@@ -1,4 +1,4 @@
-package EspressioneDiVerita;
+package EspressioniDiVerita;
 
 public class Costante extends Espressione {
     public Costante(ValoreVerita stato) {

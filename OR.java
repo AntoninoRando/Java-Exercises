@@ -1,4 +1,4 @@
-package Esercizio2;
+package EspressioniDiVerita;
 
 public class OR extends Espressione {
     public OR(Espressione e1, Espressione e2) {

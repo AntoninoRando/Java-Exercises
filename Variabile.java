@@ -1,4 +1,4 @@
-package Esercizio2;
+package EspressioniDiVerita;
 
 public class Variabile extends Espressione {
     public Variabile() {
