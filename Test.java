@@ -22,16 +22,7 @@ package Esercizio2;
  */
 public class Test {
     public static void main(String[] args) {
-        Variabile var = new Variabile(true);
-        AND and1 = new AND(var, new Espressione(true));   
-        Espressione and2 = new AND(var, new Espressione(true));   
-        Espressione not1 = new NOT(new Espressione(false));
-        var.setValoreVerita(false);
-        Espressione es1 = new OR(and2, new Espressione(true));
-        Espressione es2 = new OR(and2, new Espressione(false));
-        Espressione es3 = new NOT(es2);
-        
-        System.out.println(es3.toString());
-        System.out.println(es3.getValoreVerita());
+        ValoreVerita tr = ValoreVerita.fromBoolean(true);
+        System.out.println(tr);
     }
 }

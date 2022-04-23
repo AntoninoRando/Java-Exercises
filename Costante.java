@@ -1,7 +1,7 @@
-package Esercizio2;
+package EspressioneDiVerita;
 
 public class Costante extends Espressione {
-    public Costante(boolean valoreVerita) {
-        super(valoreVerita);
+    public Costante(ValoreVerita stato) {
+        this.stato = stato;
     }
 }

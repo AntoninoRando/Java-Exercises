@@ -2,14 +2,10 @@ package Esercizio2;
 
 public class Variabile extends Espressione {
     public Variabile() {
+        // Per default, il valore di stato rimarrà null
     }
 
-    public void setValoreVerita(boolean valoreVerita) {
-        stato = valoreVerita;
-
-        if (valoreVerita == true)
-            rappresentazione = "VERO";
-        else
-            rappresentazione = "FALSO";
+    public void setValoreVerita(ValoreVerita stato) {
+        this.stato = stato;
     }
 }
