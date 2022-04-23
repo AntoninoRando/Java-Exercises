@@ -22,7 +22,15 @@ package EspressioniDiVerita;
  */
 public class Test {
     public static void main(String[] args) {
-        ValoreVerita tr = ValoreVerita.fromBoolean(true);
-        System.out.println(tr);
+        ValoreVerita trV = ValoreVerita.fromBoolean(true);
+        System.out.println(trV);
+
+        Espressione and1 = new AND(new Costante(ValoreVerita.VERO), new Costante(ValoreVerita.FALSO));
+        System.out.println(and1.toString());
+
+        Costante tr = new Costante(trV);
+        Espressione fl = new Costante(ValoreVerita.FALSO);
+        OR or1 = new OR(tr, fl);
+        System.out.println(or1.toString());
     }
 }

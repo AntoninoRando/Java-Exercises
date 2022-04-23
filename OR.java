@@ -5,6 +5,8 @@ public class OR extends Espressione {
         eDestra = e1;
         eSinistra = e2;
         stato = ValoreVerita.fromBoolean(e1.toBoolean() || e2.toBoolean());
+
+        rappresentazione = "(" + e1.rappresentazione + " || " + e2.rappresentazione + ")";
     }
 
 }

@@ -18,7 +18,7 @@ public abstract class Espressione {
     }
 
     public String toString() {
-        return rappresentazione;
+        return rappresentazione + " = " + stato;
     }
 
     // public static Espressione fromString() {
