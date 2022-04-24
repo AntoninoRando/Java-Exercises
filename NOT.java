@@ -11,6 +11,11 @@ public class NOT extends Espressione {
     }
 
     public String getRappresentazione() {
-        return "!" + eDestra.getRappresentazione();
+        StringBuilder rappresentazione = new StringBuilder();
+        
+        rappresentazione.append("!");
+        rappresentazione.append(eDestra.getRappresentazione());
+
+        return rappresentazione.toString();
     }
 }
