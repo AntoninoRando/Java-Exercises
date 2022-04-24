@@ -1,6 +1,7 @@
 package EspressioniDiVerita;
 
 public class Variabile extends Espressione {
+    private ValoreVerita stato;
     /** Lasciamo il costruttore vuoto per sottolineare il fatto che una Variabile può
      * cambiare valore (quindi anche il valore iniziale sarà impostato col metodo)
      */
@@ -10,6 +11,13 @@ public class Variabile extends Espressione {
 
     public void setValoreVerita(ValoreVerita stato) {
         this.stato = stato;
-        rappresentazione = stato.toString();
+    }
+
+    public ValoreVerita getValoreVerita() {
+        return stato;
+    }
+
+    public String getRappresentazione() {
+        return stato.toString();
     }
 }

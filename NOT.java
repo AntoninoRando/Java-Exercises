@@ -3,8 +3,14 @@ package EspressioniDiVerita;
 public class NOT extends Espressione {
     public NOT(Espressione e) {
         eDestra = e;
-        stato = ValoreVerita.fromBoolean(!e.toBoolean());
+    }
 
-        rappresentazione = "!" + e.rappresentazione;
+    public ValoreVerita getValoreVerita() {
+        boolean risultato = !eDestra.getValoreVerita().toBoolean();
+        return ValoreVerita.fromBoolean(risultato);
+    }
+
+    public String getRappresentazione() {
+        return "!" + eDestra.getRappresentazione();
     }
 }
