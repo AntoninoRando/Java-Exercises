@@ -17,7 +17,7 @@ public class Variabile extends Espressione {
         return stato;
     }
 
-    public String getRappresentazione() {
+    public String calcolaRappresentazione() {
         return stato.toString();
     }
 }

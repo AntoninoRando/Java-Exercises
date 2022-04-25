@@ -40,5 +40,6 @@ public class Test {
         
         var1.setValoreVerita(ValoreVerita.FALSO);
         System.out.println(not1.toString());
+        System.out.println(not1.getValoreVerita());
     }
 }
