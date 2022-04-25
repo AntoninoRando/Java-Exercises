@@ -15,11 +15,13 @@ public class OR extends Espressione {
         eSinistra = e2;
     }
 
+    @Override
     public ValoreVerita getValoreVerita() {
         boolean risultato = eDestra.getValoreVerita().toBoolean() || eSinistra.getValoreVerita().toBoolean();
         return ValoreVerita.fromBoolean(risultato);
     }
 
+    @Override
     public String calcolaRappresentazione() {
         StringBuilder rappresentazione = new StringBuilder();
 

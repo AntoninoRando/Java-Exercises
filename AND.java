@@ -21,6 +21,7 @@ public class AND extends Espressione {
         return ValoreVerita.fromBoolean(risultato);
     }
 
+    @Override
     public String calcolaRappresentazione() {
         StringBuilder rappresentazione = new StringBuilder();
 

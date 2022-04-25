@@ -12,11 +12,13 @@ public class NOT extends Espressione {
         eDestra = e;
     }
 
+    @Override
     public ValoreVerita getValoreVerita() {
         boolean risultato = !eDestra.getValoreVerita().toBoolean();
         return ValoreVerita.fromBoolean(risultato);
     }
 
+    @Override
     public String calcolaRappresentazione() {
         StringBuilder rappresentazione = new StringBuilder();
 

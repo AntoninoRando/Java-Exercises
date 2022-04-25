@@ -1,22 +1,32 @@
 package EspressioniDiVerita;
 
 public class Variabile extends Espressione {
+    /**
+     * Salva il valore di verita' della variabile. Puo' essere cambiato.
+     */
     private ValoreVerita stato;
-    /** Lasciamo il costruttore vuoto per sottolineare il fatto che una Variabile può
-     * cambiare valore (quindi anche il valore iniziale sarà impostato col metodo)
+
+    /**
+     * Costruttore della classe; usato solo per creare l'oggetto.
      */
     public Variabile() {
-        // Per default, il valore di stato rimarrà null
     }
 
+    /**
+     * Permette di impostare il valore di verita' dell'oggetto.
+     * 
+     * @param stato valore di verita' sotto forma di <code>ValoreVerita</code>.
+     */
     public void setValoreVerita(ValoreVerita stato) {
         this.stato = stato;
     }
 
+    @Override
     public ValoreVerita getValoreVerita() {
         return stato;
     }
 
+    @Override
     public String calcolaRappresentazione() {
         return stato.toString();
     }
