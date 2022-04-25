@@ -1,13 +1,21 @@
 package EspressioniDiVerita;
 
 public enum ValoreVerita {
-    VERO(true, 1), FALSO(false, 0);
+    VERO(true, 1), FALSO(false, 0), INDEFINITO(null, 3);
 
-    private boolean stato;
+    private Boolean stato;
     private int statoIntero;
 
-    // Costruttore
-    ValoreVerita(boolean stato, int statoIntero) {
+    /**
+     * Costruttore dei tipi.
+     * 
+     * @param stato       il valore di verita' sotto forma di booleano. Il
+     *                    costruttore prende un oggetto di tipo <code>Boolean</code>
+     *                    per poter passare alla costante INDEFINITO null.
+     * @param statoIntero numero intero che rappresenta l'intero corrispondente al
+     *                    valore di verita'.
+     */
+    ValoreVerita(Boolean stato, int statoIntero) {
         this.stato = stato;
         this.statoIntero = statoIntero;
     }

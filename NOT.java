@@ -14,8 +14,14 @@ public class NOT extends Espressione {
 
     @Override
     public ValoreVerita getValoreVerita() {
-        boolean risultato = !eDestra.getValoreVerita().toBoolean();
-        return ValoreVerita.fromBoolean(risultato);
+        switch (eDestra.getValoreVerita().toInt()) {
+            case 0:
+                return ValoreVerita.VERO; // !FALSO 
+            case 1:
+                return ValoreVerita.FALSO; // !VERO
+            default:
+                return ValoreVerita.INDEFINITO; // Include il caso 3
+        }
     }
 
     @Override

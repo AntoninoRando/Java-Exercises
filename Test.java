@@ -41,5 +41,12 @@ public class Test {
         var1.setValoreVerita(ValoreVerita.FALSO);
         System.out.println(not1.toString());
         System.out.println(not1.getValoreVerita());
+
+        Espressione varIndef = new Variabile();
+        System.out.println(new AND(varIndef, tr).toString());
+        System.out.println(new AND(varIndef, fl).toString());
+
+        System.out.println(var1.toBoolean());
+        System.out.println(varIndef.toBoolean());
     }
 }

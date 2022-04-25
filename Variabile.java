@@ -7,9 +7,11 @@ public class Variabile extends Espressione {
     private ValoreVerita stato;
 
     /**
-     * Costruttore della classe; usato solo per creare l'oggetto.
+     * Costruttore della classe. Per default, lo stato dell'oggetto ha valore di
+     * verita' INDEFINITO.
      */
     public Variabile() {
+        stato = ValoreVerita.INDEFINITO;
     }
 
     /**

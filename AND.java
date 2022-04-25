@@ -17,8 +17,18 @@ public class AND extends Espressione {
 
     @Override
     public ValoreVerita getValoreVerita() {
-        boolean risultato = eDestra.getValoreVerita().toBoolean() && eSinistra.getValoreVerita().toBoolean();
-        return ValoreVerita.fromBoolean(risultato);
+        switch (eDestra.getValoreVerita().toInt() + eSinistra.getValoreVerita().toInt()) {
+            case 0:
+                return ValoreVerita.FALSO; // FALSO && FALSO
+            case 1:
+                return ValoreVerita.FALSO; // FALSO && VERO
+            case 2:
+                return ValoreVerita.VERO; // VERO && VERO
+            case 3:
+                return ValoreVerita.FALSO; // FALSO && INDEFINITO
+            default:
+                return ValoreVerita.INDEFINITO; // Include il caso 4: VERO && INDEFINITO
+        }
     }
 
     @Override

@@ -12,8 +12,10 @@ package EspressioniDiVerita;
  * OR.</li>
  * </ul>
  * <p>
- * Un'<code>Espressione</code> ha un proprio valore di verita'
- * (<code>valoreVerita</code>) ed una propria rappresentazione in stringa.
+ * La classe è in grado di calcolare il risultato dell'espressione, anche nel
+ * caso in cui alcune variabili non siano
+ * definite. Inoltre è in grado di restituire una rappresentazione completa
+ * dell'espressione.
  */
 public abstract class Espressione {
     /**
@@ -58,7 +60,8 @@ public abstract class Espressione {
     }
 
     /**
-     * Ritorna la rappresentazione in stringa dell'espressione ed il valore di verita' affianco.
+     * Ritorna la rappresentazione in stringa dell'espressione ed il valore di
+     * verita' affianco.
      * 
      * @return Stringa che rappresenta l'espressione ed il risultato.
      */

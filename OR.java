@@ -17,8 +17,18 @@ public class OR extends Espressione {
 
     @Override
     public ValoreVerita getValoreVerita() {
-        boolean risultato = eDestra.getValoreVerita().toBoolean() || eSinistra.getValoreVerita().toBoolean();
-        return ValoreVerita.fromBoolean(risultato);
+        switch (eDestra.getValoreVerita().toInt() + eSinistra.getValoreVerita().toInt()) {
+            case 0:
+                return ValoreVerita.FALSO; // FALSO || FALSO
+            case 1:
+                return ValoreVerita.VERO; // FALSO || VERO
+            case 2:
+                return ValoreVerita.VERO; // VERO || VERO
+            case 4:
+                return ValoreVerita.VERO; // VERO || INDEFINITO
+            default:
+                return ValoreVerita.INDEFINITO; // Include il caso 3: FALSO || INDEFINITO
+        }
     }
 
     @Override
