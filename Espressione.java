@@ -14,7 +14,7 @@ package EspressioniDiVerita;
  * <p>
  * La classe è in grado di calcolare il risultato dell'espressione, anche nel
  * caso in cui alcune variabili non siano
- * definite. Inoltre è in grado di restituire una rappresentazione completa
+ * definite. Inoltre è in grado di restituire una rappresentazione in stringa
  * dell'espressione.
  */
 public abstract class Espressione {

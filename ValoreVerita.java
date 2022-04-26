@@ -29,8 +29,11 @@ public enum ValoreVerita {
     }
 
     public static ValoreVerita fromBoolean(Boolean stato) {
-        if (stato)
+        if (stato == null)
+            return ValoreVerita.INDEFINITO;
+        else if (stato)
             return ValoreVerita.VERO;
-        return ValoreVerita.FALSO;
+        else
+            return ValoreVerita.FALSO;
     }
 }

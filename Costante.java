@@ -22,7 +22,7 @@ public class Costante extends Espressione {
     }
 
     @Override
-    public String calcolaRappresentazione() {
+    protected String calcolaRappresentazione() {
         return stato.toString();
     }
 }

@@ -32,7 +32,7 @@ public class AND extends Espressione {
     }
 
     @Override
-    public String calcolaRappresentazione() {
+    protected String calcolaRappresentazione() {
         StringBuilder rappresentazione = new StringBuilder();
 
         rappresentazione.append("(");
